@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="Libro" syncable="YES">
+        <attribute name="autores" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="portada" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Seccion" syncable="YES">
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <fetchRequest name="getSeccion" entity="Seccion" predicateString="nombre == $nombre"/>
+    <fetchRequest name="getSecciones" entity="Seccion"/>
+    <elements>
+        <element name="Seccion" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Libro" positionX="-54" positionY="0" width="128" height="90"/>
+    </elements>
+</model>
